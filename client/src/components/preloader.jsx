@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { FadeLoader } from 'react-spinners';
 export default function Preloader() {
   const [loadingText, setLoadingText] = useState('Loading...');
 
@@ -13,11 +13,8 @@ export default function Preloader() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="w-16 h-16 mb-4 relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-12 h-12 border-4 border-blue-500 rounded-full animate-pulse ring-4 ring-blue-300"></div>
-        </div>
-      </div>
+     
+     <FadeLoader color="#36d7b7" />
       <p className="text-gray-500">{loadingText}</p>
     </div>
   );
