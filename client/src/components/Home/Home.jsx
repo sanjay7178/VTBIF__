@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import banner1 from '../../assets/Home/banner1.jpg';
 import banner2 from '../../assets/Home/banner2.jpg';
 import banner3 from '../../assets/Home/banner3.jpg';
@@ -8,71 +8,46 @@ function Home() {
   const carouselItems = [
     {
       imgSrc: banner3,
+      quote: "VIT-AP TECHNOLOGY BUSINESS INCUBATION FOUNDATION",
+      para: "The Art of turning an idea into a thriving reality.",
     },
     {
       imgSrc: banner2,
+      quote: "Innovation",
+      para: "where passion meets persistence in the pursuit of success.",
     },
     {
       imgSrc: banner1,
+      quote: "Dream Of Entrepreneurship",
+      para: "Entrepreneurship is not just a career choice, it's a way of life.",
     },
   ];
-
-  const [imageHeight, setImageHeight] = useState('70%'); // Default height
-  const [isSmallMobile, setIsSmallMobile] = useState(false);
-
-  useEffect(() => {
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth < 640) {
-      setIsSmallMobile(true);
-      setImageHeight('40%'); // Adjust the height for small mobile screens
-    } else {
-      setIsSmallMobile(false);
-      setImageHeight('70%'); // Default height for larger screens
-    }
-
-    const handleResize = () => {
-      const newScreenWidth = window.innerWidth;
-
-      if (newScreenWidth < 640) {
-        setIsSmallMobile(true);
-        setImageHeight('40%');
-      } else {
-        setIsSmallMobile(false);
-        setImageHeight('70%');
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <div className='bg-neutralSilver min-h-screen flex items-center' id='home'>
       <div className='w-full'>
-        {isSmallMobile ? (
-          <div className='text-center'>
-            <img src={carouselItems[0].imgSrc} alt='' style={{ height: imageHeight, width: '100%' }} />
-            <p>Your sentence goes here</p>
-          </div>
-        ) : (
-          <Carousel className='w-full h-screen lg:max-h-screen'>
-            {carouselItems.map((item, index) => (
-              <div
-                key={index}
-                className='my-8 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-center gap-12'
-                style={{ height: imageHeight }}
-              >
-                <div>
-                  <img src={item.imgSrc} alt='' style={{ height: '100%', width: '100%' }} />
-                </div>
+        <Carousel className='w-full h-screen lg:max-h-screen'>
+          {carouselItems.map((item, index) => (
+            <div
+              key={index}
+              className='my-8 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-center gap-12 relative' // Added relative positioning
+              style={{ height: '70%', position: 'relative' }} // Adjust the height as needed
+            >
+              <div className='absolute bottom-0 left-0 p-4 w-full text-center'>
+                <p className='lg:text-2xl sm:text font-bold mb-2 md:text-white sm:text-black'>{item.quote}</p>
+                <p className='text-sm md:text-white sm:text-black'>{item.para}</p>
               </div>
-            ))}
-          </Carousel>
-        )}
+              <div>
+                <img
+                  src={item.imgSrc}
+                  alt=''
+                  style={{ height: '100%', width: '100%' }}
+                  className='w-full object-cover'
+                />
+              </div>
+            </div>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Card,  CardBody, Typography } from "@material-tailwind/react";
 import ameetImg from "../../assets/Team/ameet.jpeg";
 import sudha from "../../assets/Team/sudha.jpeg"
 import ravi from "../../assets/Team/ravi.jpg"
-import anu from "../../assets/Team/anu.jpg"
+
 import Sb from "../../assets/Team/sb.jpeg"
 import sam from "../../assets/Team/sam.jpg"
 import sira from "../../assets/Team/sira.jpg"
@@ -38,11 +38,7 @@ function ProfileCard() {
       image: ravi,
       position: "",
     },
-    {
-      name: "Dr. Anupama Namburu",
-      image: anu,
-      position: "",
-    },
+    
     {
       name: "S. Sibi Chakkaravarthy",
       image: Sb,
