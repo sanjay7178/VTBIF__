@@ -30,11 +30,11 @@ function myFooter() {
           <div>
             <Footer.Title title="about" />
             <Footer.LinkGroup col>
-              <Footer.Link href="#">
-                Flowbite
+              <Footer.Link href="/team">
+                Team
               </Footer.Link>
-              <Footer.Link href="#">
-                Tailwind CSS
+              <Footer.Link href="/startup">
+                Startups
               </Footer.Link>
             </Footer.LinkGroup>
           </div>
