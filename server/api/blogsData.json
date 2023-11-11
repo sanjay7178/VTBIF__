@@ -2,20 +2,16 @@
     {
         "id": 1,
         "title": "IIEC Entrepreneurship Development Programme (EDP) - Workshop",
-        
-        
         "author": "Dr. Y.V.Pavan Kumar,Dr. Alok Kumar Shukla",
         "authorPic": "author1.jpg",
         "published_date": "27-01-2022",
         "Participants": "65",
-       
         "content": "EDP is aimed to develop entrepreneurial abilities among our students (both engineering and non engineering domains) by inculcating the required skills and knowledge needed for starting and running his/her enterprise. It also addresses various other entrepreneurial needs for establishing successful ventures. Mr. Ravi Eswarapu, The Program Chair, TiE-AP who has more than 15 years of experience in entrepreneurship and incubation took this session on a variety of views and topics."
         
     },
     {
         "id": 2,
         "title": "IIEC World Entrepreneurs Day Event 2022",
-
         "author": "Dr. Sabeel Basheer",
         "authorPic": "author1.jpg",
         "published_date": "02-08-2022",
@@ -78,7 +74,5 @@
         "Participants": "50",
         "content": "The VIT-AP School of Law (VSL) and the Innovation, Incubation and Entrepreneurship Cell (IIEC) of the VIT-AP University jointly organized one day national seminar on the occasion of World Intellectual Property Day in April 26,2023. The conference was organized on the theme Think, Innovate and Protect to raise awareness about the importance of Intellectual Property Rights and its role in promoting innovation and creativity. The Seminar was organized in the context that Intellectual Property has become an indispensable right, with which, every valuable right that could be thought of, is connected, and to that extent it has become an important pillar of progress in today s world.."
     }
-    
- 
-    
+
 ]

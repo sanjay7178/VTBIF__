@@ -13,7 +13,7 @@ const Events = () => {
 
     useEffect(() => {
         async function fetchBlogs() {
-            let url = `http://localhost:5000/blogs?page=${currentPage}&limit=${pageSize}`;
+            let url = `https://vtbif-express.onrender.com/blogs?page=${currentPage}&limit=${pageSize}`;
 
             // If a category is selected, add it to the request
             if (selectedCategory) {

@@ -12,7 +12,7 @@ const SinglePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/blogs/${id}`);
+        const response = await fetch(`https://vtbif-express.onrender.com/blogs/${id}`);
         const result = await response.json();
         setData(result);
       } catch (error) {
