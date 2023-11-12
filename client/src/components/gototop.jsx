@@ -27,7 +27,7 @@ function GoToTopButton() {
     <div>
       {showButton && (
         <button
-          className="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-md shadow-md transition-opacity duration-300 ease-in-out hover:bg-pink-500 transform hover:scale-105"
+          className="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-md shadow-md transition-opacity duration-500 ease-in-out hover:bg-pink-500 transform hover:scale-105"
           onClick={scrollToTop}
         >
           <FiArrowUp size={32} />
