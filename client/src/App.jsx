@@ -8,7 +8,7 @@ import About from './pages/AboutPage';
 import Footer from './components/myFooter';
 import Team from './pages/TeamPage';
 import Contact from './pages/ContactPage';
-import Startup from './pages/StartupPage';
+import Startup from './pages/startupPage';
 import GoToTopButton from './components/gototop';
 import Preloader from './components/preloader';
 import EventPage from './pages/EventPage';

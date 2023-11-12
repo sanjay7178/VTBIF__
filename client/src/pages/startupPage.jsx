@@ -1,6 +1,6 @@
 import React from 'react';
 import Startup from '../components/Startup/Startup';
-import StartupList from '../components/startup/StartupList'; // Make sure the component name matches the actual export name
+import StartupList from '../components/Startup/startuplist'; // Make sure the component name matches the actual export name
 
 const StartupPage = () => {
   return (
